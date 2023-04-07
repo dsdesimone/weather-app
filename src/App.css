@@ -102,6 +102,8 @@ header{
     text-shadow: 3px 3px 5px black;  
 }
 .main__temperature p{
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.3)));
     font-weight: 600;
     margin-top: -50px;
     color: white;
@@ -121,9 +123,8 @@ header{
 /*Footer*/
 ul{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 4px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     background-color: white;
     width: 240px;
@@ -133,7 +134,6 @@ ul{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-bottom: 0;
-    padding-bottom: 1rem;
 }
 ul li{
     display: flex;
@@ -143,13 +143,17 @@ ul li{
     border-left: 2px solid cadetblue;
     width: 45px;
     padding: 0.5rem;
+    height: 60px;
+}
+.info__tag:hover{
+    opacity: 0.5;
 }
 ul li:nth-child(1){
     border-left: none;
 }
 .name__tag{
     font-size: 9px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .info__tag{
     font-weight: 600;
@@ -228,7 +232,7 @@ ul li:nth-child(1){
     }
 }
 
-@media (min-width: 390px){
+@media (min-width: 410px){
     header{
         width: 350px;
     }

@@ -26,15 +26,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 270px;
+    width: 240px;
     height: 10vh;
     padding: 1rem;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 .country__name{
-    margin-left: 10px;
+    margin-left: 4px;
     color: cadetblue;
+    font-size: 16px;
 }
 .temperature__change{
     border-radius: 50%;
@@ -56,7 +57,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.3);
-    width: 270px;
+    width: 240px;
     padding: 1rem;
     height: 300px;
 }
@@ -68,14 +69,14 @@ header{
     position: relative;
 }
 .icon__container img{
-    width: 140px;
+    width: 100px;
     margin-top: -30px;
 }
 .icon__container h3{
     color: white;
     text-shadow: 2px 2px 5px black;
     margin-top: -20px;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 200;
 }
@@ -92,8 +93,8 @@ header{
     position: relative;
 }
 .temperature{
-    font-size: 60px;
-    margin-top: 5px;
+    font-size: 50px;
+    margin-top: -10px;
     padding: 0 0.5rem;
     color: white;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
@@ -114,34 +115,34 @@ header{
     color: white;
     text-shadow: 2px 2px 5px black;
     font-weight: 600;
-    margin-top: -70px;
-    font-size: 10px;
+    margin-top: -55px;
+    font-size: 9px;
 }
 /*Footer*/
 ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     gap: 4px;
     list-style: none;
     background-color: white;
-    width: 270px;
+    width: 240px;
     padding: 1rem;
     margin-top: -10px;
-    height: 70px;
+    height: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 ul li{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-left: 2px solid cadetblue;
-    width: 100px;
+    width: 45px;
     padding: 0.5rem;
-    gap: 4px;
 }
 ul li:nth-child(1){
     border-left: none;
@@ -152,7 +153,7 @@ ul li:nth-child(1){
 }
 .info__tag{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 /*Loading*/
 .loader__container{
@@ -231,13 +232,42 @@ ul li:nth-child(1){
     header{
         width: 350px;
     }
+    .country__name{
+        font-size: 22px;
+    }
+    .temperature__change{
+        font-size: 18px;
+    }
+    .icon__container img{
+        width: 140px;
+    }
+    .icon__container h3{
+        font-size: 20px;
+    }
     .weather__temperature{
         width: 350px;
+    }
+    .temperature{
+        font-size: 70px;
+        margin-top: -4px ;
+    }
+    .main__temperature p{
+        margin-top: -80px;
+    }
+    .minmax{
+        font-size: 12px;
+        margin-top: -70px;
     }
     ul{
         width: 350px;
     }
+    ul li{
+        padding: 0 1rem;
+    }
     .name__tag{
         font-size: 12px;
+    }
+    .info__tag{
+        font-size: 18px;
     }
 }

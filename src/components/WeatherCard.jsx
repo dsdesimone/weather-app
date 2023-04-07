@@ -11,7 +11,6 @@ export const WeatherCard = ({ weather, temperature, minTemperature, maxTemperatu
     // console.log(weather)
 
     return (
-        
         <article className='main__container'>  
             <header>
                 <h2 className='country__name'>{weather?.name}, {weather?.sys.country}</h2>
@@ -52,13 +51,12 @@ export const WeatherCard = ({ weather, temperature, minTemperature, maxTemperatu
                 </div>
             </section>
             <ul>
-                <li><span className='name__tag'>Wind Speed: </span><span className='info__tag'>{weather?.wind.speed}m/s</span></li>
+                <li><span className='name__tag'>Wind<br />Speed: </span><span className='info__tag'>{weather?.wind.speed}m/s</span></li>
                 <li><span className='name__tag'>Clouds: </span><span className='info__tag'>{weather?.clouds.all}%</span></li>
                 <li><span className='name__tag'>Pressure: </span><span className='info__tag'>{weather?.main.pressure}hPa</span></li>
                 <li><span className='name__tag'>Humidity: </span><span className='info__tag'>{weather?.main.humidity}%</span></li>
             </ul>
             
         </article>
-        
     )
 }

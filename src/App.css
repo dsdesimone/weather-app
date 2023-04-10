@@ -4,7 +4,6 @@ body{
     font-size: 12px;
 }
 .App{
-    /* background-image: url('assets/backgrounds/04d.jpg'); */
     background-position: center;
     background-size: cover; 
     height: 100vh; 
@@ -12,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 /*Header*/
 .main__container{
     display: flex;
@@ -231,6 +231,139 @@ ul li:nth-child(1){
         top: -50px;
     }
 }
+/*******/
+.fondo-animado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.uno, 
+.dos,
+.tres,
+.cuatro {
+    border: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    animation: vuelta 7s linear infinite both;
+    
+}
+.uno{
+    font-size: 50px;
+    bottom: -50px;
+    color: rgb(175, 238, 238, .7);
+}
+.dos{
+    font-size: 30px;
+    bottom: -30px;
+    color: rgb(152, 251, 152, .7);
+}
+.tres{
+    font-size: 20px;
+    bottom: -20px;
+    color: rgba(242, 183, 152, 0.7);
+}
+.cuatro{
+    font-size: 10px;
+    bottom: -10px;
+    color: rgb(238, 232, 170, .7);
+}
+.fondo-animado span:nth-child(1){
+    left: 5%;
+}
+.fondo-animado span:nth-child(2){
+    left: 50%;
+}
+.fondo-animado span:nth-child(3){
+    left: 35%;
+}
+.fondo-animado span:nth-child(4){
+    left: 75%;
+}
+.fondo-animado span:nth-child(5){
+    left: 25%;
+}
+.fondo-animado span:nth-child(6){
+    left: 85%;
+}
+.fondo-animado span:nth-child(7){
+    left: 90%;
+}
+.fondo-animado span:nth-child(8){
+    left: 65%;
+}
+.fondo-animado span:nth-child(9){
+    left: 60%;
+}
+.fondo-animado span:nth-child(10){
+    left: 75%;
+}
+.fondo-animado span:nth-child(11){
+    left: 10%;
+}
+.fondo-animado span:nth-child(12){
+    left: 45%;
+}
+.delay-1{
+    animation-delay: 1s;
+}
+.delay-2{
+    animation-delay: 2s;
+}
+.delay-3{
+    animation-delay: 3s;
+}
+.delay-4{
+    animation-delay: 4s;
+}
+.delay-5{
+    animation-delay: 5s;
+}
+.delay-6{
+    animation-delay: 6s;
+}
+.delay-7{
+    animation-delay: 7s;
+}
+@keyframes vuelta{
+    from{
+        transform: rotate(0deg);
+        bottom: 0;
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    15%{
+        opacity: .2;
+    }
+    30%{
+        opacity: 1;
+    }
+    45%{
+        opacity: .2;
+    }
+    60%{
+        opacity: 1;
+    }
+    75%{
+        opacity: .2;
+    }
+    90%{
+        opacity: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        bottom: calc(100% + 50px);
+        opacity: 0;
+    }
+}
+/*******/
 
 @media (min-width: 410px){
     header{
